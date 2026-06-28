@@ -1,15 +1,51 @@
-body{
-   background-color: #CACAAA; 
+body {
+  background-color: #cacaaa;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
+.container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.teste{
-    background-color: #55868C;
-    width: 150px;
-    height: 50px;
-    border-radius: 15px;
+.teste {
+  background-color: #7f636e;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.containerRound {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 70%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #7f636e;
+}
+
+.titleRoundBox {
+  width: 170px;
+  height: 15%;
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+  background-color: #eec584;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.nRoundBox {
+  width: 170px;
+  height: 15%;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  background-color: beige;
+  border-radius: 0px 0px 8px 8px;
+}
+
+#nRound {
+  margin: 0;
+}
+.titleRound {
+  margin: 0;
 }
