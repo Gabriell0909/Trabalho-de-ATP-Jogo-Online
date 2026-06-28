@@ -1,12 +1,30 @@
 body {
   background-color: #cacaaa;
+  background-color: #f4f7f6;
   padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
   transform: scale(0.9);
+}
+
+.containerP1,
+.containerP2,
+.containerRound {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  min-width: 170px;
 }
 
 .teste {
@@ -17,32 +35,54 @@ body {
 }
 
 .containerRound {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: 70%;
   border-radius: 5px;
   box-shadow: 10px 10px 10px #7f636e;
 }
 
-.titleRoundBox {
-  width: 170px;
-  height: 15%;
+.containerTabuleiro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  padding: 16px;
+  background-color: #eec584;
+  border-radius: 14px;
+  box-shadow: 0 8px 16px rgba(127, 99, 110, 0.25);
+}
+
+.titleRoundBox,
+.nRoundBox,
+.painelPlayer {
+  width: 100%;
+  min-height: 56px;
   padding: 15px;
   text-align: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.titleRoundBox {
   background-color: #eec584;
   border-radius: 8px 8px 0px 0px;
 }
 
-.nRoundBox {
-  width: 170px;
-  height: 15%;
-  padding: 15px;
-  text-align: center;
-  justify-content: center;
+.nRoundBox,
+.painelPlayer {
   background-color: beige;
   border-radius: 0px 0px 8px 8px;
+}
+
+.painelPlayer {
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 #nRound {
@@ -52,13 +92,23 @@ body {
   margin: 0;
 }
 
-.painelPlayer {
-  display: flex;
-  width: 170px;
-  height: 15%;
-  padding: 15px;
-  text-align: center;
-  justify-content: center;
+.celula {
   background-color: beige;
-  border-radius: 0px 0px 8px 8px;
+  border: 2px solid #eec584;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7f636e;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.celula:hover {
+  background-color: #f5f5dc;
+  transform: translateY(-2px);
 }
