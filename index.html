@@ -11,7 +11,7 @@
       <section class="container">
         <section class="containerP1">
           <div class="titleRoundBox">
-            <h2 class="titleRound">Fulaninho</h2>
+            <h2 class="titleRound" id="p1name">Fulaninho 1</h2>
           </div>
           <div class="painelPlayer">
             <h2 id="nRound">Vitorias:</h2>
@@ -30,7 +30,7 @@
 
         <section class="containerP2">
           <div class="titleRoundBox">
-            <h2 class="titleRound">Fulaninho</h2>
+            <h2 class="titleRound" id="p2name">Fulaninho 2</h2>
           </div>
           <div class="painelPlayer">
             <h2 id="nRound">Vitorias:</h2>
@@ -40,6 +40,9 @@
       </section>
     </header>
     <section class="containerTabuleiro">
+      <div class="currentPlayer">
+        <h2 id="currentPlayer">Vez do jogador tal</h2>
+      </div>
       <div class="tabuleiro">
         <button class="celula"></button>
         <button class="celula"></button>
@@ -52,5 +55,14 @@
         <button class="celula"></button>
       </div>
     </section>
+
+    <div class="gameDialog hidden" id="winnerDialog">
+      <div class="dialogContent">
+        <p id="winnerMessage">Vencedor</p>
+        <button id="resetButton" type="button">Reiniciar</button>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
