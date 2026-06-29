@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="container">
+        <section class="containerP1">
+          <div class="titleRoundBox">
+            <h2 class="titleRound" id="p1name">Fulaninho 1</h2>
+          </div>
+          <div class="painelPlayer">
+            <h2 id="nRound">Vitorias:</h2>
+            <h2 id="nRound">0</h2>
+          </div>
+        </section>
+
+        <section class="containerRound">
+          <div class="titleRoundBox">
+            <h2 class="titleRound">Round</h2>
+          </div>
+          <div class="nRoundBox">
+            <h2 id="nRound">0</h2>
+          </div>
+        </section>
+
+        <section class="containerP2">
+          <div class="titleRoundBox">
+            <h2 class="titleRound" id="p2name">Fulaninho 2</h2>
+          </div>
+          <div class="painelPlayer">
+            <h2 id="nRound">Vitorias:</h2>
+            <h2 id="nRound">0</h2>
+          </div>
+        </section>
+      </section>
+    </header>
+    <section class="containerTabuleiro">
+      <div class="currentPlayer">
+        <h2 id="currentPlayer">Vez do jogador tal</h2>
+      </div>
+      <div class="tabuleiro">
+        <button class="celula"></button>
+        <button class="celula"></button>
+        <button class="celula"></button>
+        <button class="celula"></button>
+        <button class="celula"></button>
+        <button class="celula"></button>
+        <button class="celula"></button>
+        <button class="celula"></button>
+        <button class="celula"></button>
+      </div>
+    </section>
+
+    <div class="gameDialog hidden" id="winnerDialog">
+      <div class="dialogContent">
+        <p id="winnerMessage">Vencedor</p>
+        <button id="resetButton" type="button">Reiniciar</button>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
