@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="b" style="width: 50px; height: 50px"></button>
+    <button class="b" style="width: 50px; height: 50px"></button>
+    <button class="b" style="width: 50px; height: 50px"></button>
+    <script>
+      let botoes = document.querySelectorAll('.b')//deve conter o indicador de classe ou id
+
+      botoes.forEach(function(btn){//o forEach passa pela nodeList de todos os elementos selecionados
+                                  // com uma função que carrega um paremtro, que representa cada botão individualmente 
+
+//Evento que ao clicar no botão especifico e inserido um texto a ele
+        btn.addEventListener('click', function(){
+           btn.innerText = "X"
+        })
+
+
+      })
+    </script>
+  </body>
+</html>

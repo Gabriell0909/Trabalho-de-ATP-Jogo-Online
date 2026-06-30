@@ -10,4 +10,4 @@ export let pontuacaoP2 = document.querySelector("#nVitoriaP2")
 export let rodadas = document.querySelector("#nRounds")
 
 //COLETA TODAS AS CELULAS
-export const cells = document.querySelectorAll("celula")
+export const cells = document.querySelectorAll(".celula")
